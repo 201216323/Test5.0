@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/share"
+        android:icon="@mipmap/mine_login_account"
+        android:orderInCategory="0"
+        android:title="分享"
+        />
+    <item
+        android:id="@+id/setting"
+        android:icon="@mipmap/mine_login_account"
+        android:orderInCategory="1"
+        android:title="设置"
+        />
+    <item
+        android:id="@+id/cancle"
+        android:icon="@mipmap/mine_login_account"
+        android:orderInCategory="2"
+        android:title="取消"
+        />
+</menu>

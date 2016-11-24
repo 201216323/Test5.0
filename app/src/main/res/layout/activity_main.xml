@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical"
+    tools:context="bruce.chang.test50.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/tvGoTextInputLayoutAct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="show Material Dialog"
+            android:textAllCaps="false"
+            android:textColor="@color/colorAccent"
+            android:textSize="14sp"/>
+
+
+        <TextView
+            android:id="@+id/tvShowDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="show Material Dialog"
+            android:textAllCaps="false"
+            android:textColor="@color/colorAccent"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tvGoSwipeRefreshActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="tvGoSwipeRefreshActivity"
+            android:textAllCaps="false"
+            android:textColor="@color/colorAccent"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tvGoLinearLayoutCompatActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="LinearLayoutCompat"
+            android:textAllCaps="false"
+            android:textColor="@color/colorAccent"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tvGoListPopWindowActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="tvGoListPopWindowActivity"
+            android:textAllCaps="false"
+            android:textColor="@color/colorAccent"
+            android:textSize="14sp"/>
+        <TextView
+            android:id="@+id/tvGoPopMenuActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="tvGoListPopWindowActivity"
+            android:textAllCaps="false"
+            android:textColor="@color/colorAccent"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+</ScrollView>
