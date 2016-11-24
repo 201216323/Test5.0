@@ -23,7 +23,7 @@
             android:background="#ffffff"
             android:gravity="center"
             android:padding="10dp"
-            android:text="show Material Dialog"
+            android:text="TextInputLayout和Snackbar"
             android:textAllCaps="false"
             android:textColor="@color/colorAccent"
             android:textSize="14sp"/>
@@ -88,7 +88,19 @@
             android:background="#ffffff"
             android:gravity="center"
             android:padding="10dp"
-            android:text="tvGoListPopWindowActivity"
+            android:text="tvGoPopMenuActivity"
+            android:textAllCaps="false"
+            android:textColor="@color/colorAccent"
+            android:textSize="14sp"/>
+        <TextView
+            android:id="@+id/tvGoTitleBarActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="tvGoTitleBarActivity"
             android:textAllCaps="false"
             android:textColor="@color/colorAccent"
             android:textSize="14sp"/>

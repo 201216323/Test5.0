@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     TextView tvGoLinearLayoutCompatActivity;
     TextView tvGoListPopWindowActivity;
     TextView tvGoPopMenuActivity;
+    TextView tvGoTitleBarActivity;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +33,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tvGoListPopWindowActivity.setOnClickListener(this);
         tvGoPopMenuActivity = (TextView) findViewById(R.id.tvGoPopMenuActivity);
         tvGoPopMenuActivity.setOnClickListener(this);
+        tvGoTitleBarActivity = (TextView) findViewById(R.id.tvGoTitleBarActivity);
+        tvGoTitleBarActivity.setOnClickListener(this);
     }
 
     @Override
@@ -54,6 +57,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.tvGoPopMenuActivity:
                 go(PopupMenuActivity.class);
+                break;
+            case R.id.tvGoTitleBarActivity:
+                go(TitleBarActivity.class);
                 break;
         }
 

@@ -43,7 +43,7 @@ public class PopupMenuActivity extends AppCompatActivity {
         //参数View 是设置当前菜单显示的相对于View组件位置，具体位置系统会处理
         PopupMenu popupMenu = new PopupMenu(this, view);
         //加载menu布局
-        popupMenu.getMenuInflater().inflate(R.menu.menu_main, popupMenu.getMenu());
+        popupMenu.getMenuInflater().inflate(R.menu.menu_popmenu, popupMenu.getMenu());
 
         //设置menu中的item点击事件
         popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
