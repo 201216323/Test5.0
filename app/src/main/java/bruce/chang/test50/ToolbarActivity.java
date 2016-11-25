@@ -20,10 +20,11 @@ import android.widget.Toast;
  * Function:
  */
 
-public class TitleBarActivity extends AppCompatActivity implements Toolbar.OnMenuItemClickListener{
+public class ToolbarActivity extends AppCompatActivity implements Toolbar.OnMenuItemClickListener {
     Toolbar toolbar;
     Button button;
     SwitchCompat switchCompatBoy;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,49 +52,36 @@ public class TitleBarActivity extends AppCompatActivity implements Toolbar.OnMen
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(TitleBarActivity.this, "aaa", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ToolbarActivity.this, "aaa", Toast.LENGTH_SHORT).show();
             }
         });
 
         switchCompatBoy.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-                if (b){
-                    Toast.makeText(TitleBarActivity.this, "checked", Toast.LENGTH_SHORT).show();
-                }else {
-                    Toast.makeText(TitleBarActivity.this, "no checked", Toast.LENGTH_SHORT).show();
+                if (b) {
+                    Toast.makeText(ToolbarActivity.this, "checked", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(ToolbarActivity.this, "no checked", Toast.LENGTH_SHORT).show();
                 }
-
             }
         });
-
-
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_titlebar,menu);
+        getMenuInflater().inflate(R.menu.menu_titlebar, menu);
         return super.onCreateOptionsMenu(menu);
     }
-
-//    @Override
-//    public boolean onOptionsItemSelected(MenuItem item) {
-//        switch (item.getItemId()){
-//            case R.id.action_settings:
-//
-//                return true;
-//        }
-//        return super.onOptionsItemSelected(item);
-//    }
 
     @Override
     public boolean onMenuItemClick(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.action_edit:
-                Toast.makeText(TitleBarActivity.this, "查找按钮", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ToolbarActivity.this, "查找按钮", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.action_share:
-                Toast.makeText(TitleBarActivity.this, "分享按钮", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ToolbarActivity.this, "分享按钮", Toast.LENGTH_SHORT).show();
                 break;
         }
         return false;

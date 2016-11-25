@@ -36,9 +36,7 @@ public class ListPopupWindowActivity extends AppCompatActivity {
                 showListPopup(buttonShow);
             }
         });
-
     }
-
 
     public void showListPopup(View view) {
         String items[] = {"item1", "item2", "item3", "item4", "item5"};
@@ -65,25 +63,19 @@ public class ListPopupWindowActivity extends AppCompatActivity {
                             }
                         })
                         .show();
-
             }
         });
-
         //设置ListPopupWindow的锚点,也就是弹出框的位置是相对当前参数View的位置来显示，
         listPopupWindow.setAnchorView(view);
-
         //ListPopupWindow 距锚点的距离，也就是相对锚点View的位置
         listPopupWindow.setHorizontalOffset(100);
         listPopupWindow.setVerticalOffset(100);
-
         //设置对话框的宽高
         listPopupWindow.setWidth(lineContainer.getLayoutParams().width);
         listPopupWindow.setHeight(600);
         listPopupWindow.setModal(false);
         //设置点击外边区域不可取消
         listPopupWindow.setForceIgnoreOutsideTouch(true);
-
         listPopupWindow.show();
-
     }
 }

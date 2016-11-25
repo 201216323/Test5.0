@@ -43,6 +43,19 @@
             android:textSize="14sp"/>
 
         <TextView
+            android:id="@+id/tvFloatingActionButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="tvGoFloatingActionButton"
+            android:textAllCaps="false"
+            android:textColor="@color/colorAccent"
+            android:textSize="14sp"/>
+
+        <TextView
             android:id="@+id/tvGoSwipeRefreshActivity"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -80,6 +93,7 @@
             android:textAllCaps="false"
             android:textColor="@color/colorAccent"
             android:textSize="14sp"/>
+
         <TextView
             android:id="@+id/tvGoPopMenuActivity"
             android:layout_width="match_parent"
@@ -92,6 +106,7 @@
             android:textAllCaps="false"
             android:textColor="@color/colorAccent"
             android:textSize="14sp"/>
+
         <TextView
             android:id="@+id/tvGoTitleBarActivity"
             android:layout_width="match_parent"
@@ -100,7 +115,7 @@
             android:background="#ffffff"
             android:gravity="center"
             android:padding="10dp"
-            android:text="tvGoTitleBarActivity"
+            android:text="tvGoToolBarActivity"
             android:textAllCaps="false"
             android:textColor="@color/colorAccent"
             android:textSize="14sp"/>

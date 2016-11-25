@@ -11,6 +11,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     TextView tvGoTextInputLayoutAct;
     TextView tvShowDialog;
+    TextView tvGoFloatingActionButton;
     TextView tvGoSwipeRefreshActivity;
     TextView tvGoLinearLayoutCompatActivity;
     TextView tvGoListPopWindowActivity;
@@ -25,6 +26,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tvGoTextInputLayoutAct.setOnClickListener(this);
         tvShowDialog = (TextView) findViewById(R.id.tvShowDialog);
         tvShowDialog.setOnClickListener(this);
+        tvGoFloatingActionButton = (TextView) findViewById(R.id.tvFloatingActionButton);
+        tvGoFloatingActionButton.setOnClickListener(this);
         tvGoSwipeRefreshActivity = (TextView) findViewById(R.id.tvGoSwipeRefreshActivity);
         tvGoSwipeRefreshActivity.setOnClickListener(this);
         tvGoLinearLayoutCompatActivity = (TextView) findViewById(R.id.tvGoLinearLayoutCompatActivity);
@@ -43,8 +46,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.tvGoTextInputLayoutAct:
                 go(TextInputLayoutActivity.class);
                 break;
+            case R.id.tvFloatingActionButton:
+                go(FloatingActionButtonActivity.class);
+                break;
             case R.id.tvShowDialog:
-                showDialog1();
+                showMaterialDialog();
                 break;
             case R.id.tvGoSwipeRefreshActivity:
                 go(SwipeRefreshActivity.class);
@@ -59,8 +65,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 go(PopupMenuActivity.class);
                 break;
             case R.id.tvGoTitleBarActivity:
-                go(TitleBarActivity.class);
+                go(ToolbarActivity.class);
                 break;
+
         }
 
     }
@@ -69,12 +76,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         startActivity(new Intent(this, c));
     }
 
-    private void showDialog1() {
+    private void showMaterialDialog() {
         android.support.v7.app.AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setMessage("我爱你 爱着你就像老鼠爱大米")
+                .setCancelable(false)
                 .setNegativeButton("取消", null)
                 .setPositiveButton("确定", null)
-                .setTitle("Material Design Dialog")
+                .setTitle("this is a Material Design Dialog")
                 .show();
     }
 }

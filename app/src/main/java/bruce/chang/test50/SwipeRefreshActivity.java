@@ -1,6 +1,5 @@
 package bruce.chang.test50;
 
-import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.Nullable;
@@ -29,7 +28,7 @@ public class SwipeRefreshActivity extends AppCompatActivity implements SwipeRefr
         //设置下拉刷新监听事件
         swipeContainer.setOnRefreshListener(this);
         //设置进度条的颜色
-        swipeContainer.setColorSchemeColors(Color.RED, Color.BLUE, Color.GREEN);
+//        swipeContainer.setColorSchemeColors(Color.RED, Color.BLUE, Color.GREEN);
         //设置圆形进度条大小
         swipeContainer.setSize(SwipeRefreshLayout.DEFAULT);
         //设置进度条背景颜色
@@ -38,7 +37,6 @@ public class SwipeRefreshActivity extends AppCompatActivity implements SwipeRefr
 //        swipeContainer.setDistanceToTriggerSync(50);
 
     }
-
     @Override
     public void onRefresh() {
         new Handler().postDelayed(new Runnable() {

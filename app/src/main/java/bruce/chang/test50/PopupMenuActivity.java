@@ -44,7 +44,6 @@ public class PopupMenuActivity extends AppCompatActivity {
         PopupMenu popupMenu = new PopupMenu(this, view);
         //加载menu布局
         popupMenu.getMenuInflater().inflate(R.menu.menu_popmenu, popupMenu.getMenu());
-
         //设置menu中的item点击事件
         popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
             @Override
@@ -63,14 +62,6 @@ public class PopupMenuActivity extends AppCompatActivity {
                 return true;
             }
         });
-        //设置popupWindow消失的点击事件
-//        popupMenu.setOnDismissListener(new PopupMenu.OnDismissListener() {
-//            @Override
-//            public void onDismiss(PopupMenu menu) {
-//                Snackbar.make(line1Container, "消失", Snackbar.LENGTH_SHORT).show();
-//            }
-//        });
-
         popupMenu.show();
     }
 }

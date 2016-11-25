@@ -10,6 +10,7 @@
         android:layout_height="?attr/actionBarSize"
         android:background="?attr/colorPrimary"></android.support.v7.widget.Toolbar>
 
+
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -62,6 +63,5 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="模式切换" />
-
 
 </LinearLayout>
