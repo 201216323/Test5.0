@@ -24,6 +24,11 @@
         <activity
             android:name=".ToolbarActivity"
             android:theme="@style/AppThemeA"/>
+        <activity android:name=".TabLayoutActivity"/>
+        <activity android:name=".AppBarLayoutActivity"/>
+        <activity android:name=".CoordinatorLayoutActivity"/>
+        <activity android:name=".CollapsingToolbarLayoutActivity"/>
+
     </application>
 
 </manifest>

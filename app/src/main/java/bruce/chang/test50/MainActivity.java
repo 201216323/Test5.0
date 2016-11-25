@@ -17,6 +17,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     TextView tvGoListPopWindowActivity;
     TextView tvGoPopMenuActivity;
     TextView tvGoTitleBarActivity;
+    TextView tvGoTabLayoutActivity;
+    TextView tvGoAppBarLayoutActivity;
+    TextView tvGoCoordinatorLayoutActivity;
+    TextView tvGoCollapsingToolbarLayoutActivity;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +43,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tvGoPopMenuActivity.setOnClickListener(this);
         tvGoTitleBarActivity = (TextView) findViewById(R.id.tvGoTitleBarActivity);
         tvGoTitleBarActivity.setOnClickListener(this);
+        tvGoTabLayoutActivity = (TextView) findViewById(R.id.tvGoTabLayout);
+        tvGoTabLayoutActivity.setOnClickListener(this);
+        tvGoAppBarLayoutActivity = (TextView) findViewById(R.id.tvGoAppBarLayoutActivity);
+        tvGoAppBarLayoutActivity.setOnClickListener(this);
+        tvGoCoordinatorLayoutActivity = (TextView) findViewById(R.id.tvGoCoordinatorLayoutActivity);
+        tvGoCoordinatorLayoutActivity.setOnClickListener(this);
+        tvGoCollapsingToolbarLayoutActivity = (TextView) findViewById(R.id.tvGoCollapsingToolbarLayoutActivity);
+        tvGoCollapsingToolbarLayoutActivity.setOnClickListener(this);
     }
 
     @Override
@@ -67,7 +80,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.tvGoTitleBarActivity:
                 go(ToolbarActivity.class);
                 break;
-
+            case R.id.tvGoTabLayout:
+                go(TabLayoutActivity.class);
+                break;
+            case R.id.tvGoAppBarLayoutActivity:
+                go(AppBarLayoutActivity.class);
+                break;
+            case R.id.tvGoCoordinatorLayoutActivity:
+                go(CoordinatorLayoutActivity.class);
+                break;
+            case R.id.tvGoCollapsingToolbarLayoutActivity:
+                go(CollapsingToolbarLayoutActivity.class);
+                break;
         }
 
     }

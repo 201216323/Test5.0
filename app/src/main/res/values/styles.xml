@@ -30,4 +30,5 @@
         <item name="editTextColor">#00ff00</item>
         <item name="android:textColorHint">#00ff00</item>
     </style>
+
 </resources>
