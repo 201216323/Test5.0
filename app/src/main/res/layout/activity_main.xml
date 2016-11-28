@@ -140,22 +140,11 @@
             android:background="#ffffff"
             android:gravity="center"
             android:padding="10dp"
-            android:text="tvGoAppBarLayoutActivity"
+            android:text="tvGoAppBarLayout和GoCoordinatorLayoutActivity"
             android:textAllCaps="false"
             android:textColor="@color/colorAccent"
             android:textSize="14sp"/>
-        <TextView
-            android:id="@+id/tvGoCoordinatorLayoutActivity"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:background="#ffffff"
-            android:gravity="center"
-            android:padding="10dp"
-            android:text="tvGoCoordinatorLayoutActivity"
-            android:textAllCaps="false"
-            android:textColor="@color/colorAccent"
-            android:textSize="14sp"/>
+
         <TextView
             android:id="@+id/tvGoCollapsingToolbarLayoutActivity"
             android:layout_width="match_parent"
@@ -165,6 +154,18 @@
             android:gravity="center"
             android:padding="10dp"
             android:text="tvGoCollapsingToolbarLayoutActivity"
+            android:textAllCaps="false"
+            android:textColor="@color/colorAccent"
+            android:textSize="14sp"/>
+        <TextView
+            android:id="@+id/tvGoNestedScrollViewActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="tvGoNestedScrollViewActivity"
             android:textAllCaps="false"
             android:textColor="@color/colorAccent"
             android:textSize="14sp"/>

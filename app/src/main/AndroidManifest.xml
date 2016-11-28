@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="bruce.chang.test50">
+    package="bruce.chang.test50">
 
     <application
         android:allowBackup="true"
@@ -10,24 +10,31 @@
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".TextInputLayoutActivity"/>
-        <activity android:name=".FloatingActionButtonActivity"/>
-        <activity android:name=".SwipeRefreshActivity"/>
-        <activity android:name=".LinearLayoutCompatActivity"/>
-        <activity android:name=".ListPopupWindowActivity"/>
-        <activity android:name=".PopupMenuActivity"/>
+        <activity android:name=".TextInputLayoutActivity" />
+        <activity android:name=".FloatingActionButtonActivity" />
+        <activity android:name=".SwipeRefreshActivity" />
+        <activity android:name=".LinearLayoutCompatActivity" />
+        <activity android:name=".ListPopupWindowActivity" />
+        <activity android:name=".PopupMenuActivity" />
         <activity
             android:name=".ToolbarActivity"
-            android:theme="@style/AppThemeA"/>
-        <activity android:name=".TabLayoutActivity"/>
-        <activity android:name=".AppBarLayoutActivity"/>
-        <activity android:name=".CoordinatorLayoutActivity"/>
-        <activity android:name=".CollapsingToolbarLayoutActivity"/>
+            android:theme="@style/AppThemeA" />
+        <activity android:name=".TabLayoutActivity" />
+        <activity
+            android:name=".AppBarLayoutActivity"
+            android:theme="@style/AppThemeB" />
+        <activity android:name=".CollapsingToolbarLayoutActivity"
+            android:theme="@style/AppThemeC"
+            />
+
+        <activity android:name=".NestedScrollViewActivity"
+            android:theme="@style/AppThemeB"
+            />
 
     </application>
 

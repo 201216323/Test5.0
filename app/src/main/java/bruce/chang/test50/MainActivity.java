@@ -19,10 +19,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     TextView tvGoTitleBarActivity;
     TextView tvGoTabLayoutActivity;
     TextView tvGoAppBarLayoutActivity;
-    TextView tvGoCoordinatorLayoutActivity;
+
     TextView tvGoCollapsingToolbarLayoutActivity;
 
-
+    TextView tvGoNestedScrollViewActivity;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,10 +47,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tvGoTabLayoutActivity.setOnClickListener(this);
         tvGoAppBarLayoutActivity = (TextView) findViewById(R.id.tvGoAppBarLayoutActivity);
         tvGoAppBarLayoutActivity.setOnClickListener(this);
-        tvGoCoordinatorLayoutActivity = (TextView) findViewById(R.id.tvGoCoordinatorLayoutActivity);
-        tvGoCoordinatorLayoutActivity.setOnClickListener(this);
         tvGoCollapsingToolbarLayoutActivity = (TextView) findViewById(R.id.tvGoCollapsingToolbarLayoutActivity);
         tvGoCollapsingToolbarLayoutActivity.setOnClickListener(this);
+        tvGoNestedScrollViewActivity = (TextView) findViewById(R.id.tvGoNestedScrollViewActivity);
+        tvGoNestedScrollViewActivity.setOnClickListener(this);
     }
 
     @Override
@@ -86,11 +86,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.tvGoAppBarLayoutActivity:
                 go(AppBarLayoutActivity.class);
                 break;
-            case R.id.tvGoCoordinatorLayoutActivity:
-                go(CoordinatorLayoutActivity.class);
-                break;
             case R.id.tvGoCollapsingToolbarLayoutActivity:
                 go(CollapsingToolbarLayoutActivity.class);
+                break;
+            case R.id.tvGoNestedScrollViewActivity:
+                go(NestedScrollViewActivity.class);
                 break;
         }
 

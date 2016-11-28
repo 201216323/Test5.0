@@ -30,5 +30,11 @@
         <item name="editTextColor">#00ff00</item>
         <item name="android:textColorHint">#00ff00</item>
     </style>
+    <style name="AppThemeB" parent="Theme.AppCompat.Light.NoActionBar">
+
+    </style>
+    <style name="AppThemeC" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+    </style>
 
 </resources>
