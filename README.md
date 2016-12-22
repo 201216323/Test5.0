@@ -1,17 +1,17 @@
 前言：
 上一篇Android 5.0的文章，小编仔细学习使用了TextInputLayout和Snackbar，不清楚的可以查看[原文链接](http://note.youdao.com/noteshare?id=832547f1f6b12fbfbeda7421e7e6017a)，这一篇文章中将会全部介绍5.0中其它比较常用的控件，下面是目录：
 
-> 1. Material Dialog
-> 7. FloatingActionButton
-> 2. SwipeRefreshLayout
-> 3. LinearLayoutCompat
-> 4. ListPopupWindow
-> 5. PopupMenu
-> 6. Toolbar
-> 8. TabLayout(选项卡布局)
-> 9. AppBarLayout（程序栏布局）&& CoordinatorLayout（协作布局）
-> 11. CollapsingToolbarLayout（折叠工具栏布局）
-> 12.NestedScrollView的使用
+1. Material Dialog
+1. FloatingActionButton
+1. SwipeRefreshLayout
+1. LinearLayoutCompat
+1. ListPopupWindow
+1. PopupMenu
+1. Toolbar
+1. TabLayout(选项卡布局)
+1. AppBarLayout（程序栏布局）&& CoordinatorLayout（协作布局）
+1. CollapsingToolbarLayout（折叠工具栏布局）
+1. NestedScrollView的使用
 
 
 ## Material Dialog
@@ -303,7 +303,7 @@ public void showListPopup(View view) {
 ```
 效果图如下：
 ![image](http://ww3.sinaimg.cn/mw690/b0d9a523jw1fa4gv2482ig20aq0hrdin.gif)
-## PopupMenu 
+## PopupMenu
 这是一个菜单式弹出框的控件，可以用这个控件来使用Menu中的文件，简单来使用一下。
 
 测试程序：
@@ -601,13 +601,13 @@ public class ToolbarActivity extends AppCompatActivity implements Toolbar.OnMenu
 
 
 ```
-1. colorPrimary: Toolbar导航栏的底色。 
-1. colorPrimaryDark：状态栏的底色，注意这里只支持Android5.0以上的手机。 
-1. textColorPrimary：整个当前Activity的字体的默认颜色。 
-1. android:windowBackground：当前Activity的窗体颜色。 
-1. colorAccent：CheckBox，RadioButton，SwitchCompat等控件的点击选中颜色 
-1. colorControlNormal：CheckBox，RadioButton，SwitchCompat等默认状态的颜色。 
-1. colorButtonNormal：默认状态下Button按钮的颜色。 
+1. colorPrimary: Toolbar导航栏的底色。
+1. colorPrimaryDark：状态栏的底色，注意这里只支持Android5.0以上的手机。
+1. textColorPrimary：整个当前Activity的字体的默认颜色。
+1. android:windowBackground：当前Activity的窗体颜色。
+1. colorAccent：CheckBox，RadioButton，SwitchCompat等控件的点击选中颜色
+1. colorControlNormal：CheckBox，RadioButton，SwitchCompat等默认状态的颜色。
+1. colorButtonNormal：默认状态下Button按钮的颜色。
 1. editTextColor：默认EditView输入框字体的颜色。
 ```
 参考文章链接：http://blog.csdn.net/feiduclear_up/article/details/46457433
@@ -739,27 +739,27 @@ TabLayout常用的属性有：
 1. app:tabTextColor：Tab未被选中字体的颜色
 1. app:tabIndicatorColor：Tab指示器下标的颜色
 
-TabLayout常用的方法如下： 
-- addTab(TabLayout.Tab tab, int position, boolean setSelected) 增加选项卡到 layout 中 
-- addTab(TabLayout.Tab tab, boolean setSelected) 同上 
-- addTab(TabLayout.Tab tab) 同上 
-- getTabAt(int index) 得到选项卡 
-- getTabCount() 得到选项卡的总个数 
-- getTabGravity() 得到 tab 的 Gravity 
-- getTabMode() 得到 tab 的模式 
-- getTabTextColors() 得到 tab 中文本的颜色 
-- newTab() 新建个 tab 
-- removeAllTabs() 移除所有的 tab 
-- removeTab(TabLayout.Tab tab) 移除指定的 tab 
-- removeTabAt(int position) 移除指定位置的 tab 
-- setOnTabSelectedListener(TabLayout.OnTabSelectedListener onTabSelectedListener) 为每个 tab 增加选择监听器 
-- setScrollPosition(int position, float positionOffset, boolean updateSelectedText) 设置滚动位置 
-- setTabGravity(int gravity) 设置 Gravity 
-- setTabMode(int mode) 设置 Mode,有两种值：TabLayout.MODE_SCROLLABLE和TabLayout.MODE_FIXED分别表示当tab的内容超过屏幕宽度是否支持横向水平滑动，第一种支持滑动，第二种不支持，默认不支持水平滑动。 
-- setTabTextColors(ColorStateList textColor) 设置 tab 中文本的颜色 
-- setTabTextColors(int normalColor, int selectedColor) 设置 tab 中文本的颜色 默认 选中 
-- setTabsFromPagerAdapter(PagerAdapter adapter) 设置 PagerAdapter 
-- setupWithViewPager(ViewPager viewPager) 和 ViewPager 联动 
+TabLayout常用的方法如下：
+- addTab(TabLayout.Tab tab, int position, boolean setSelected) 增加选项卡到 layout 中
+- addTab(TabLayout.Tab tab, boolean setSelected) 同上
+- addTab(TabLayout.Tab tab) 同上
+- getTabAt(int index) 得到选项卡
+- getTabCount() 得到选项卡的总个数
+- getTabGravity() 得到 tab 的 Gravity
+- getTabMode() 得到 tab 的模式
+- getTabTextColors() 得到 tab 中文本的颜色
+- newTab() 新建个 tab
+- removeAllTabs() 移除所有的 tab
+- removeTab(TabLayout.Tab tab) 移除指定的 tab
+- removeTabAt(int position) 移除指定位置的 tab
+- setOnTabSelectedListener(TabLayout.OnTabSelectedListener onTabSelectedListener) 为每个 tab 增加选择监听器
+- setScrollPosition(int position, float positionOffset, boolean updateSelectedText) 设置滚动位置
+- setTabGravity(int gravity) 设置 Gravity
+- setTabMode(int mode) 设置 Mode,有两种值：TabLayout.MODE_SCROLLABLE和TabLayout.MODE_FIXED分别表示当tab的内容超过屏幕宽度是否支持横向水平滑动，第一种支持滑动，第二种不支持，默认不支持水平滑动。
+- setTabTextColors(ColorStateList textColor) 设置 tab 中文本的颜色
+- setTabTextColors(int normalColor, int selectedColor) 设置 tab 中文本的颜色 默认 选中
+- setTabsFromPagerAdapter(PagerAdapter adapter) 设置 PagerAdapter
+- setupWithViewPager(ViewPager viewPager) 和 ViewPager 联动
 
 **最后要强调的是，TabLayout要配合Theme.AppCompat。。。。。。来使用，否则会报错的哦，不明白的可以试一下**
 
@@ -1045,12 +1045,12 @@ CollapsingToolbarLayout 提供以下属性和方法是用：
 1. Parallax scrolling children：CollapsingToolbarLayout滑动时，子视图的视觉差，可以通过属性app:layout_collapseParallaxMultiplier=”0.6”改变。
 1. CollapseMode ：子视图的折叠模式，有两种“pin”：固定模式，在折叠的时候最后固定在顶端；“parallax”：视差模式，在折叠的时候会有个视差折叠的效果。我们可以在布局中使用属性app:layout_collapseMode=”parallax”来改变。
 
-特别注意的是要使用NoActionBar的主题，且AppBarLayout的布局超过手机屏幕的时候，滑动也是有问题的。 
+特别注意的是要使用NoActionBar的主题，且AppBarLayout的布局超过手机屏幕的时候，滑动也是有问题的。
 
 ## NestedScrollView的使用:
 
-NestedScrollView是support-v4包提供的控件,继承至FrameLayout, 
-并实现了NestedScrollingParent,NestedScrollingChild, ScrollingView接口. 
+NestedScrollView是support-v4包提供的控件,继承至FrameLayout,
+并实现了NestedScrollingParent,NestedScrollingChild, ScrollingView接口.
 它的作用类似于Android.widget.ScrollView,不同点在于NestedScrollView支持嵌套滑动.
 
 效果图如下：
@@ -1200,6 +1200,12 @@ public class NestedScrollViewActivity extends AppCompatActivity {
 
 
 本篇文章源码下载地址：[点我](https://github.com/201216323/Test5.0)
+
+欢迎访问201216323.tech来查看我的CSDN博客。
+
+欢迎关注我的个人技术公众号,快速查看我的最新文章。
+
+![我的公众号图片](http://img.blog.csdn.net/20161220174646569?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvY2NnXzIwMTIxNjMyMw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast "bruce常")
 
 参考链接：
 1. http://blog.csdn.net/feiduclear_up/article/details/46514791
