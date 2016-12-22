@@ -29,7 +29,7 @@ public class CollapsingToolbarLayoutActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayShowTitleEnabled(false);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         collapsingToolbar = (CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar);
-//        collapsingToolbar.setTitle("bruce常");
+        collapsingToolbar.setTitle("bruce常");
     }
 
     @Override
